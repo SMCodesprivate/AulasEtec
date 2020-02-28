@@ -1,0 +1,79 @@
+<html>
+	<head>
+		<title>666 etis ueM</title>
+		<style>
+			#table {
+				background-color: #999999 ;
+				width: 80%;
+				border-radius: 5px;
+				border: 2px solid #333333;
+				padding: 5px;
+			}
+			#title td {
+				font-size: 35px !important;
+				font-weight: 900;
+				color: #4f1bb8;
+			}
+			td {
+				width: 200px;
+				font-size: 30px;
+				border: 2px solid #333333;
+				border-radius: 5px;
+				color: #fafafa;
+			}
+			td img {
+				margin-top: 15px;
+				margin-bottom: 15px;
+			}
+		</style>
+	</head>
+	<body bgcolor=#ffffff>
+		<center>
+			<font size=8 color=#999999 id="site">etis ueM</font>
+			<br><br>
+			<h1>acitàmrofnI ed ocincèT</h1>
+			<h2>beW oãçamargorP aluA</h2>
+			
+			<font color=#921234><b>SSC, TPIRCSAVAJ, LMTH</b></font>
+			<hr size=3>
+		</center>
+		<center>
+			<font size='9'> alebaT</font>
+			<br><br>
+			<table id="table">
+				<tr width="400px" id="title">
+					<td>anilpicsiD</td>
+					<td>rosseforP</td>
+					<td>Imagem</td>
+				</tr>
+				<tr>
+					<td>otnemicehnoC</td>
+					<td>ohnizuliB</td>
+					<td><center><img src="https://pbs.twimg.com/profile_images/1124501820037107714/mJnnZl8X_400x400.jpg" width="250px" height="250px" ></center></td>
+				</tr>
+				<tr>
+					<td>samsatnaF açaC</td>
+					<td>samsatnaF açaC</td>
+					<td><center><img src="https://http2.mlstatic.com/D_NQ_NP_837093-MLB25529241928_042017-W.jpg" width="250px" height="250px"></center></td>
+				</tr>
+				<tr>
+					<td>otup racif omoC</td>
+					<td>ugniP</td>
+					<td><center><img src="https://pbs.twimg.com/profile_images/1230352969943650305/sIT-IBzM.jpg" width="250px" height="250px"></center></td>
+				</tr>
+			</table>
+		</center>
+		<script>
+		function invertionText(element) {
+			var newElement = "";
+			for(var text = element.innerHTML.length-1;text >= 0;text--) {
+				newElement += element.innerHTML[text];
+			}
+			element.innerHTML = newElement;
+		}
+		var site = document.getElementById('site');
+		console.log(site.innerHTML.length);
+		invertionText(site);
+		</script>
+	</body>
+</html>
