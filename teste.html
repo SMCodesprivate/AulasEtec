@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Teste</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		html, body {
+			width: 100%;
+			height: 100%;
+			transition: .1s all linear;
+		}
+		:root {
+			--red-color: #ff7575;
+			--yellow-color: #ffed83;
+			--orange-color: #ffb870;
+			--blue-color: #0ab9d2;
+			--limon-color: #8cff7a;
+			--green-color: #38d807;
+			--purple-color: #b09da3;
+			--rose-light-color: #fff0f5;
+			--rose-color: #eee0e5;
+		}
+		.red {
+			background-color: var(--red-color);
+		}
+		.yellow {
+			background-color: var(--yellow-color);
+		}
+		.orange {
+			background-color: var(--orange-color);
+		}
+		.blue {
+			background-color: var(--blue-color);
+		}
+		.limon {
+			background-color: var(--limon-color);
+		}
+		.green {
+			background-color: var(--green-color);
+		}
+		.rose-light {
+			background-color: var(--rose-light-color);
+		}
+		.purple {
+			background-color: var(--purple-color);
+		}
+		.rose {
+			background-color: var(--rose-color);
+		}
+
+		#colors {
+			height: 185px;
+			display: flex;
+			margin: 0 150px 0 150px;
+		}
+		#colors li {
+			box-shadow: 0 0 2px #bbb;
+			flex: 1;
+			list-style: none;
+			float: left;
+			height: 200px;
+			margin: 0 5px 0 5px;
+			cursor: pointer;
+			transition: .2s all linear;
+		}
+		#colors li:hover {
+			transform: scale(1.15);
+			box-shadow: 0 0 5px #333;
+		}
+		#colors-div {
+			width: 100%;
+			height: 185px;
+			position: relative;
+			top: 50px;
+		}
+	</style>
+</head>
+<body id="corpo">
+	<div id="colors-div">
+		<center>
+			<ul id="colors">
+				<!-- --red-color: #ff7575;
+				--yellow-color: #ffed83;
+				--orange-color: #ffb870;
+				--blue-color: #0ab9d2;
+				--limon-color: #8cff7a;
+				--green-color: #38d807;
+				--purple-color: #b09da3;
+				--rose-light-color: #fff0f5;
+				--rose-color: #eee0e5; -->
+				<li class="red" onmouseleave="handleLeave()" onmouseenter="handleMouse('ff7575')"></li>
+				<li class="yellow" onmouseleave="handleLeave()" onmouseenter="handleMouse('ffed83')"></li>
+				<li class="orange" onmouseleave="handleLeave()" onmouseenter="handleMouse('ffb870')"></li>
+				<li class="blue" onmouseleave="handleLeave()" onmouseenter="handleMouse('0ab9d2')"></li>
+				<li class="limon" onmouseleave="handleLeave()" onmouseenter="handleMouse('8cff7a')"></li>
+				<li class="green" onmouseleave="handleLeave()" onmouseenter="handleMouse('38d807')"></li>
+				<li class="purple" onmouseleave="handleLeave()" onmouseenter="handleMouse('b09da3')"></li>
+				<li class="rose-light" onmouseleave="handleLeave()" onmouseenter="handleMouse('fff0f5')"></li>
+				<li class="rose" onmouseleave="handleLeave()" onmouseenter="handleMouse('eee0e5')"></li>
+			</ul>
+		</center>
+	</div>
+	<script type="text/javascript">
+		const body = document.getElementById('corpo');
+		function handleLeave() {
+			body.style.backgroundColor = "#ffffff";
+		}
+		function handleMouse(color) {
+			body.style.backgroundColor = "#"+color;
+		}
+	</script>
+</body>
+</html>
